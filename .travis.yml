@@ -4,6 +4,6 @@ python:
 script:
   - pytest
 install:
-  - pip install flit
-  - flit install .
+  - pip install flit pytest
+  - flit install
 
