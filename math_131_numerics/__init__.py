@@ -3,7 +3,7 @@ Merced. Ths includes includes bisection method, fixed-point, Newton's, Secant,
 Lagrange interpolant, Numerical differentiation, Trapezoid rule, Simpsons's
 rule, Euler's, Taylor's, Runge-Kutta and Adams methods'''
 
-__version__='0.0.1'
+__version__='0.0.2'
 def bisection_method(f, a, b, tol, N):
     '''
     Solve root-finding problem using bisection method
@@ -26,7 +26,8 @@ def bisection_method(f, a, b, tol, N):
     
     Returns
     =======
-    tuple (c, n, err) where c is the root, n the number of iterations, err the absolute error
+    tuple (x, err, k) where x is the root, err the absolute error, k the number of iterations
+    return (None, None, k+1) if not enough iterations for expected tolerence error
     
     '''
     err = (b-a)/2
