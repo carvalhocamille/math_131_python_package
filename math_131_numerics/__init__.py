@@ -49,3 +49,4 @@ def bisection_method(f, a, b, tol, N):
         
     if k == N+1:
         print('No convergence, need more iterations')
+        return None, None, k

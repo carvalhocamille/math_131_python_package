@@ -9,3 +9,10 @@ def test_not_print(capfd):
     out, err = capfd.readouterr()
     assert out == 'Convergence in 17 steps\n'
     
+def test_no_convergence(capfd):
+    result = bisection_method(lambda x: 1, 0, 3, 1e-5, 100)
+    out, err = capfd.readouterr()
+    assert out == 'No convergence, need more iterations\n'
+    assert result == (None, None, 101)
+
+    
