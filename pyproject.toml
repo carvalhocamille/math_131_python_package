@@ -6,6 +6,5 @@ build-backend = "flit.buildapi"
 module = "math_131_numerics"
 author = "Camille Carvalho"
 author-email = "ccarvalho3@ucmerced.edu"
-home-page = "https://www.github.com/carvalhocamille/math_131_numerics"
+home-page = "https://github.com/carvalhocamille/math_131_python_package"
 classifiers = ["License :: OSI Approved :: MIT License"]
-
